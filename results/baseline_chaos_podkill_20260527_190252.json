@@ -1,0 +1,18 @@
+[
+  {
+    "trial": 1,
+    "chaos_type": "pod_kill",
+    "target_pod": "my-open5gs-amf-7c7b859f44-68ltt",
+    "new_pod": "my-open5gs-amf-7c7b859f44-5n7dx",
+    "fault_time": "2026-05-27T19:02:47.452481",
+    "detect_time": "2026-05-27T19:02:49.342369",
+    "recovery_time": "2026-05-27T19:02:52.531216",
+    "mttd": 1.889888,
+    "mttr": 5.078735,
+    "system": "baseline",
+    "rule_action": "RESTART_POD",
+    "rule_reasoning": "Rule-based: force-delete pod to accelerate Kubernetes restart",
+    "rule_latency": 0.312065,
+    "status": "success"
+  }
+]

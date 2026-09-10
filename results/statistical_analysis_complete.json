@@ -1,0 +1,42 @@
+{
+  "descriptive": {
+    "baseline_n": 90,
+    "baseline_mean": 1.5483601358201768,
+    "baseline_sd": 1.15674627771061,
+    "ai_n": 90,
+    "ai_mean": 1.2123048444444444,
+    "ai_sd": 1.3974817728260633,
+    "mean_difference": 0.3360552913757324
+  },
+  "normality": {
+    "baseline_shapiro_w": 0.9264999106022974,
+    "baseline_shapiro_p": 7.72839461612729e-05,
+    "baseline_normal": false,
+    "ai_shapiro_w": 0.704421029617232,
+    "ai_shapiro_p": 3.6172652608932203e-12,
+    "ai_normal": false
+  },
+  "variance": {
+    "levene_w": 0.00014397189051056766,
+    "levene_p": 0.9904399871773268,
+    "equal_variances": true
+  },
+  "ttest": {
+    "type": "Student",
+    "t_statistic": 1.7573849909324202,
+    "p_value": 0.08057135198249583,
+    "significant": false
+  },
+  "effect_size": {
+    "cohens_d": 0.26197548682418287,
+    "ci_lower": -0.031468696047363076,
+    "ci_upper": 0.5554196696957288,
+    "interpretation": "SMALL effect (d=0.2)",
+    "pooled_std": 1.2827738024255149,
+    "note": "95% CI using Hedges-Olkin approximation"
+  },
+  "equivalence_sensitivity": [
+    {
+      "delta": 0.5,
+      "p_tost": 0.1962046525926602,
+      "equivalent": 

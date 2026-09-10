@@ -1,0 +1,21 @@
+Constrained AI Agent Framework for 5G Core Fault Management
+
+Copyright 2026 Athukoralalage Charith Lakpriya Jayathilake
+
+This project was developed as part of an MSc dissertation at the
+University of Staffordshire (delivered through APIIT Sri Lanka),
+titled "Design and Validation of a Constrained AI Agent Framework
+for 5G Core Fault Management."
+
+Supervisor: Dr. Roshan Rajapaksha
+Assessor: Dr. Chinthaka Kumara
+
+If you use this work in your research, please cite as described
+in the CITATION.cff file included with this distribution.
+
+This product includes software developed by third parties under
+their respective open-source licenses:
+- Open5GS (https://open5gs.org/) - AGPL v3
+- Chaos Mesh (https://chaos-mesh.org/) - Apache 2.0
+- k3s (https://k3s.io/) - Apache 2.0
+- Anthropic API client (https://github.com/anthropics/anthropic-sdk-python) - MIT

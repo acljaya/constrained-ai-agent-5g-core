@@ -1,0 +1,58 @@
+CONFUSION MATRIX + REASONING EXCERPTS
+======================================================================
+
+CONFUSION MATRIX:
+----------------------------------------------------------------------
+Scenario              RESTART_POD     SCALE_UP        WAIT            Total
+Network Delay         -               -               10 (100%)       10
+Pod Kill              8 (80%)         -               2 (20%)         10
+Network Partition     10 (100%)       -               -               10
+CPU Stress            -               10 (100%)       -               10
+
+
+DATA-DRIVEN INSIGHTS:
+----------------------------------------------------------------------
+
+Network Delay:
+  Dominant: WAIT (10/10 = 100%)
+  Variation: RESTART_POD (0/10 = 0%)
+  Variation: SCALE_UP (0/10 = 0%)
+
+Pod Kill:
+  Dominant: RESTART_POD (8/10 = 80%)
+  Variation: WAIT (2/10 = 20%)
+  Variation: SCALE_UP (0/10 = 0%)
+
+Network Partition:
+  Dominant: RESTART_POD (10/10 = 100%)
+  Variation: SCALE_UP (0/10 = 0%)
+  Variation: WAIT (0/10 = 0%)
+
+CPU Stress:
+  Dominant: SCALE_UP (10/10 = 100%)
+  Variation: RESTART_POD (0/10 = 0%)
+  Variation: WAIT (0/10 = 0%)
+
+
+REASONING EXCERPTS:
+----------------------------------------------------------------------
+
+Excerpt 1: Network Delay -> WAIT
+Trial 1, MTTR 35.59s, AI latency 3.79s
+"Network delay is a transient condition often caused by external network chaos rather than pod-level failure. With only 1 probe failure and the pod still Running, restarting won't fix network-layer issues and would disrupt AMF signaling sessions. Scaling up adds replicas that face the same network delay. Waiting allows the chaos condition to clear and enables proper diagnosis."
+
+Excerpt 2: Pod Kill -> WAIT
+Trial 1, MTTR 21.02s, AI latency 3.61s
+"The AMF pod was forcefully terminated via PodChaos and is already in Terminated phase. Kubernetes' deployment controller will automatically recreate the pod from the ReplicaSet. Manual intervention (RESTART_POD) is redundant and could interfere with the in-progress self-healing. SCALE_UP doesn't address a termination event. Waiting allows native Kubernetes recovery to complete while preserving observability."
+
+Excerpt 3: Pod Kill -> RESTART_POD
+Trial 3, MTTR 11.90s, AI latency 4.13s
+"The AMF pod was forcefully terminated via PodChaos and is in Terminated phase. AMF is a critical 5G control plane function for UE registration and mobility; immediate pod recreation via deletion ensures Kubernetes spins up a fresh replica quickly. Waiting risks prolonged signaling outage, and scaling up won't replace the failed instance."
+
+Excerpt 4: Network Partition -> RESTART_POD
+Trial 1, MTTR 30.88s, AI latency 4.28s
+"Network partition isolating the AMF pod from the cluster requires immediate intervention since AMF is critical for UE registration and mobility management. Only 1 readiness probe failure suggests early detection; restarting the pod forces Kubernetes to reschedule it with fresh network connectivity (new CNI setup, re-established service mesh), which typically resolves transient network isolation faster than waiting. Scaling up won't help since existing replicas may share the same network issue."
+
+Excerpt 5: CPU Stress -> SCALE_UP
+Trial 1, MTTR 25.92s, AI latency 4.10s
+"The pod is under 50% CPU stress and still Running, indicating a load issue rather than a failure."

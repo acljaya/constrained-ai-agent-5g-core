@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: >-
+  Constrained AI Agent Framework for 5G Core
+  Fault Management
+message: >-
+  If you use this software or the associated
+  research in your work, please cite it as below.
+type: software
+authors:
+  - given-names: Athukoralalage Charith Lakpriya
+    family-names: Jayathilake
+    orcid: 'https://orcid.org/0009-0003-6137-7741'
+identifiers:
+  - type: url
+    value: 'https://github.com/acljaya/constrained-ai-agent-5g-core'
+    description: GitHub repository
+repository-code: 'https://github.com/acljaya/constrained-ai-agent-5g-core'
+abstract: >-
+  A constrained AI agent framework for autonomous
+  fault management in cloud-native 5G core networks.
+  The framework uses a bounded action space of three
+  operations (WAIT, RESTART_POD, SCALE_UP) combined
+  with fast-path routing to reconcile adaptive
+  reasoning with operational stability. Experimentally
+  validated across 240 controlled trials on an
+  Open5GS 5G core running on Kubernetes with
+  Chaos Mesh fault injection, benchmarked against
+  a rule-based baseline.
+keywords:
+  - 5G core network
+  - fault management
+  - large language models
+  - constrained AI agents
+  - cloud-native networks
+  - kubernetes
+  - chaos engineering
+  - Open5GS
+  - mean time to recovery
+  - agentic AI
+license: Apache-2.0
+version: 1.0.0
+date-released: '2026-09-10'
+references:
+  - type: thesis
+    title: >-
+      Design and Validation of a Constrained AI
+      Agent Framework for 5G Core Fault Management
+    authors:
+      - given-names: Athukoralalage Charith Lakpriya
+        family-names: Jayathilake
+    year: 2026
+    thesis-type: MSc dissertation
+    institution:
+      name: University of Staffordshire
+    notes: >-
+      Delivered through APIIT Sri Lanka.
+      Supervisor: Dr. Roshan Rajapaksha.

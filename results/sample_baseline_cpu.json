@@ -1,0 +1,18 @@
+{
+  "trial": 1,
+  "chaos_type": "cpu_stress",
+  "target_pod": "my-open5gs-amf-7c7b859f44-jjrjv",
+  "fault_time": "2026-05-28T00:46:02.760112",
+  "detect_time": "2026-05-28T00:46:06.160069",
+  "recovery_time": "2026-05-28T00:46:23.194820",
+  "mttd": 3.399957,
+  "mttr": 20.434708,
+  "pod_phase": "Running",
+  "probe_failures": 0,
+  "system": "baseline",
+  "rule_action": "NO_ACTION",
+  "rule_reasoning": "Rule did not fire: detection condition (pod.status.phase != 'Running') not met. CPU stress does not change pod lifecycle phase.",
+  "rule_latency": 4e-06,
+  "recovered": true,
+  "status": "success"
+}

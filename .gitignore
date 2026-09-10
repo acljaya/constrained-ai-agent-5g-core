@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+venv-*/
+env/
+ENV/
+.venv/
+.env/
+
+# Environment files (may contain secrets)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.pyre/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Local results (uncomment if you don't want to track new experimental runs)
+# results/experimental_*
+
+# Backups
+*.bak
+*.backup
+*~
+
+# AWS credentials (should never be here, but just in case)
+.aws/
+credentials
+
+# Temp files
+tmp/
+temp/
+*.tmp

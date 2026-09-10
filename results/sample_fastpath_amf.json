@@ -1,0 +1,16 @@
+{
+  "trial": 1,
+  "pod": "my-open5gs-amf",
+  "deleted_pod": "my-open5gs-amf-7c7b859f44-fbq9l",
+  "new_pod": "my-open5gs-amf-7c7b859f44-khhpq",
+  "fault_time": "2026-05-23T02:29:45.197445",
+  "detect_time": "2026-05-23T02:29:45.232276",
+  "recovery_time": "2026-05-23T02:29:48.810971",
+  "mttd": 0.034831,
+  "mttr": 3.613526,
+  "ai_action": "RESTART_POD",
+  "ai_reasoning": "Simple pod deletion - Kubernetes will auto-restart",
+  "ai_latency": 1e-05,
+  "fast_path": true,
+  "status": "success"
+}

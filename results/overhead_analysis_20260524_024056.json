@@ -1,0 +1,152 @@
+{
+  "baseline": {
+    "type": "baseline",
+    "avg_cpu_percent": 46.010000000000005,
+    "avg_memory_mb": 3391.66484375,
+    "measurements": [
+      {
+        "timestamp": "2026-05-24T02:39:07.296148",
+        "cpu_percent": 54.1,
+        "memory_used_mb": 3323.0703125,
+        "memory_percent": 86.7
+      },
+      {
+        "timestamp": "2026-05-24T02:39:09.315280",
+        "cpu_percent": 52.8,
+        "memory_used_mb": 3311.15234375,
+        "memory_percent": 86.4
+      },
+      {
+        "timestamp": "2026-05-24T02:39:11.316130",
+        "cpu_percent": 88.2,
+        "memory_used_mb": 3614.84765625,
+        "memory_percent": 94.3
+      },
+      {
+        "timestamp": "2026-05-24T02:39:13.317505",
+        "cpu_percent": 37.6,
+        "memory_used_mb": 3444.62890625,
+        "memory_percent": 89.8
+      },
+      {
+        "timestamp": "2026-05-24T02:39:15.318196",
+        "cpu_percent": 13.2,
+        "memory_used_mb": 3297.3984375,
+        "memory_percent": 86.0
+      },
+      {
+        "timestamp": "2026-05-24T02:39:17.318800",
+        "cpu_percent": 31.6,
+        "memory_used_mb": 3303.671875,
+        "memory_percent": 86.2
+      },
+      {
+        "timestamp": "2026-05-24T02:39:19.321809",
+        "cpu_percent": 82.4,
+        "memory_used_mb": 3455.40625,
+        "memory_percent": 90.1
+      },
+      {
+        "timestamp": "2026-05-24T02:39:21.538955",
+        "cpu_percent": 78.2,
+        "memory_used_mb": 3611.70703125,
+        "memory_percent": 94.2
+      },
+      {
+        "timestamp": "2026-05-24T02:39:23.636636",
+        "cpu_percent": 10.7,
+        "memory_used_mb": 3281.34765625,
+        "memory_percent": 85.6
+      },
+      {
+        "timestamp": "2026-05-24T02:39:25.637325",
+        "cpu_percent": 11.3,
+        "memory_used_mb": 3273.41796875,
+        "memory_percent": 85.4
+      }
+    ]
+  },
+  "ai_agent": {
+    "type": "ai_agent",
+    "avg_cpu_percent": 58.35,
+    "avg_memory_mb": 3546.944140625,
+    "avg_ai_latency": 5.901314997673035,
+    "measurements": [
+      {
+        "timestamp": "2026-05-24T02:39:33.667719",
+        "cpu_before": 63.2,
+        "cpu_after": 23.8,
+        "memory_mb": 3410.6953125,
+        "ai_latency": 3.2509825229644775
+      },
+      {
+        "timestamp": "2026-05-24T02:39:39.134654",
+        "cpu_before": 33.3,
+        "cpu_after": 60.0,
+        "memory_mb": 3415.48046875,
+        "ai_latency": 3.2636611461639404
+      },
+      {
+        "timestamp": "2026-05-24T02:39:49.191946",
+        "cpu_before": 59.5,
+        "cpu_after": 45.0,
+        "memory_mb": 3779.921875,
+        "ai_latency": 7.116958856582642
+      },
+      {
+        "timestamp": "2026-05-24T02:40:10.473459",
+        "cpu_before": 46.0,
+        "cpu_after": 97.6,
+        "memory_mb": 3761.81640625,
+        "ai_latency": 16.88216757774353
+      },
+      {
+        "timestamp": "2026-05-24T02:40:20.002311",
+        "cpu_before": 63.9,
+        "cpu_after": 41.4,
+        "memory_mb": 3767.453125,
+        "ai_latency": 6.101864576339722
+      },
+      {
+        "timestamp": "2026-05-24T02:40:28.409376",
+        "cpu_before": 51.6,
+        "cpu_after": 95.0,
+        "memory_mb": 3314.6328125,
+        "ai_latency": 5.249815225601196
+      },
+      {
+        "timestamp": "2026-05-24T02:40:35.604040",
+        "cpu_before": 78.9,
+        "cpu_after": 47.4,
+        "memory_mb": 3688.58203125,
+        "ai_latency": 4.903179168701172
+      },
+      {
+        "timestamp": "2026-05-24T02:40:41.928902",
+        "cpu_before": 64.3,
+        "cpu_after": 75.0,
+        "memory_mb": 3378.99609375,
+        "ai_latency": 3.805913209915161
+      },
+      {
+        "timestamp": "2026-05-24T02:40:47.916641",
+        "cpu_before": 100.0,
+        "cpu_after": 57.1,
+        "memory_mb": 3577.7734375,
+        "ai_latency": 3.770719528198242
+      },
+      {
+        "timestamp": "2026-05-24T02:40:54.818663",
+        "cpu_before": 95.2,
+        "cpu_after": 41.2,
+        "memory_mb": 3374.08984375,
+        "ai_latency": 4.667888164520264
+      }
+    ]
+  },
+  "overhead": {
+    "cpu_percent": 12.339999999999996,
+    "memory_mb": 155.279296875,
+    "ai_latency_avg": 5.901314997673035
+  }
+}

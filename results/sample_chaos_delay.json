@@ -1,0 +1,16 @@
+{
+  "trial": 1,
+  "chaos_type": "delay",
+  "target_pod": "my-open5gs-amf-7c7b859f44-j5c6f",
+  "fault_time": "2026-05-24T01:56:48.079858",
+  "detect_time": "2026-05-24T01:56:52.659932",
+  "recovery_time": "2026-05-24T01:57:23.673657",
+  "mttd": 4.580074,
+  "mttr": 35.593799,
+  "ai_action": "WAIT",
+  "ai_reasoning": "Network delay is a transient condition often caused by external network chaos rather than pod-level failure. With only 1 probe failure and the pod still Running, restarting won't fix network-layer issues and would disrupt AMF signaling sessions. Scaling up adds replicas that face the same network delay. Waiting allows the chaos condition to clear and enables proper diagnosis.",
+  "ai_latency": 3.788397,
+  "pod_phase": "Running",
+  "probe_failures": 1,
+  "status": "success"
+}

@@ -1,0 +1,17 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: network-delay-light
+  namespace: chaos-mesh
+spec:
+  action: delay
+  mode: one
+  selector:
+    namespaces:
+      - open5gs
+    labelSelectors:
+      "app.kubernetes.io/name": "amf"
+  delay:
+    latency: "300ms"
+    jitter: "50ms"
+  duration: "30s"

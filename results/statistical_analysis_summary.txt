@@ -1,0 +1,25 @@
+STATISTICAL ANALYSIS SUMMARY
+======================================================================
+
+Sample sizes: Baseline n=90, AI Agent n=90
+Mean MTTR: Baseline 1.548s, AI 1.212s
+Difference: 0.336s
+
+Student t-test: t=1.7574, p=0.0806
+Cohen d: 0.262 (95% CI [-0.031, 0.555])
+Interpretation: SMALL effect (d=0.2)
+
+TOST SENSITIVITY ANALYSIS:
+  Delta = +/-0.5s: p=0.1962 -> Not equivalent
+  Delta = +/-1.0s: p=0.0003 -> EQUIVALENT *** USE THIS ***
+  Delta = +/-2.0s: p=0.0000 -> EQUIVALENT
+
+RECOMMENDED: Use Delta = +/-1.0s in dissertation
+
+95% CI on mean difference: [-0.039s, 0.711s]
+
+POWER ANALYSIS:
+  Observed effect (d=0.262): 69.1%
+  Small effect (d=0.2): 46.7%
+  Medium effect (d=0.5): 99.7%
+  Large effect (d=0.8): 100.0%

@@ -1,0 +1,15 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: network-partition
+  namespace: chaos-mesh
+spec:
+  action: partition
+  mode: one
+  selector:
+    namespaces:
+      - open5gs
+    labelSelectors:
+      "app.kubernetes.io/name": "amf"
+  direction: both
+  duration: "25s"

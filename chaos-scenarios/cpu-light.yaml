@@ -1,0 +1,17 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  name: cpu-light
+  namespace: chaos-mesh
+spec:
+  mode: one
+  selector:
+    namespaces:
+      - open5gs
+    labelSelectors:
+      "app.kubernetes.io/name": "amf"
+  stressors:
+    cpu:
+      workers: 1
+      load: 50
+  duration: "20s"
